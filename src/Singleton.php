@@ -34,4 +34,15 @@ class Singleton
 
         return self::$instances[$class];
     }
+
+    /**
+     * Check if selected class is using singleton pattern
+     *
+     * @param string $class_name
+     * @return bool
+     */
+    public static function isSingleton(string $class_name): bool
+    {
+        return is_subclass_of($class_name, self::class);
+    }
 }
