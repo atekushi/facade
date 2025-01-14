@@ -2,7 +2,10 @@
 
 namespace Atekushi\Support;
 
-use Atekushi\Singleton\Singleton;
+use Atekushi\Container\Container;
+use Atekushi\Container\Exceptions\ContainerException;
+use Atekushi\Container\Exceptions\NotFoundException;
+use ReflectionException;
 
 class Facade
 {
@@ -12,6 +15,9 @@ class Facade
      * @param string $name
      * @param array $arguments
      * @return mixed
+     * @throws ContainerException
+     * @throws NotFoundException
+     * @throws ReflectionException
      */
     public static function __callStatic(string $name, array $arguments)
     {
@@ -36,9 +42,12 @@ class Facade
      *
      * @param string $class_name
      * @return object
+     * @throws ContainerException
+     * @throws NotFoundException
+     * @throws ReflectionException
      */
     protected static function buildSubject(string $class_name): object
     {
-        return Singleton::isSingleton($class_name) ? call_user_func([$class_name, 'getInstance']) : new $class_name;
+        return Container::getInstance()->get($class_name);
     }
 }
