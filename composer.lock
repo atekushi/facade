@@ -4,11 +4,52 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "22297a047191f06d00206e6ccdb51312",
-    "packages": [],
+    "content-hash": "8af64d44ae27fde5f3a10cbb2704440d",
+    "packages": [
+        {
+            "name": "atekushi/singleton",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atekushi/singleton.git",
+                "reference": "8ca7b33e63d361dee8e52db23a64bca25e879fc6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atekushi/singleton/zipball/8ca7b33e63d361dee8e52db23a64bca25e879fc6",
+                "reference": "8ca7b33e63d361dee8e52db23a64bca25e879fc6",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Atekushi\\Singleton\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Endrika Nanami",
+                    "email": "endrika.nanami@gmail.com"
+                }
+            ],
+            "description": "Small Library to Implement Singleton Pattern To Your Project",
+            "support": {
+                "issues": "https://github.com/atekushi/singleton/issues",
+                "source": "https://github.com/atekushi/singleton/tree/1.0.0"
+            },
+            "time": "2025-01-14T09:33:31+00:00"
+        }
+    ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,

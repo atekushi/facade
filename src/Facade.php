@@ -2,6 +2,8 @@
 
 namespace Atekushi\Support;
 
+use Atekushi\Singleton\Singleton;
+
 class Facade
 {
     /**
