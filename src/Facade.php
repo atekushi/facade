@@ -1,6 +1,6 @@
 <?php
 
-namespace Atekushi\Support;
+namespace Atekushi\Facade;
 
 use Atekushi\Container\Container;
 use Atekushi\Container\Exceptions\ContainerException;
