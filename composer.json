@@ -1,6 +1,6 @@
 {
-    "name": "atekushi/support",
-    "description": "PHP Package to Support All Atekushi Library",
+    "name": "atekushi/essential",
+    "description": "Essential Library For Atekushi PHP",
     "type": "library",
     "license": "MIT",
     "autoload": {
