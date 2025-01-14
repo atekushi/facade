@@ -1,6 +1,6 @@
 {
-    "name": "atekushi/essential",
-    "description": "Essential Library For Atekushi PHP",
+    "name": "atekushi/facade",
+    "description": "Small Library to Implement Facade on DI Container To Your Project",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -17,6 +17,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": "^8.2",
-        "atekushi/singleton": "1.*"
+        "atekushi/singleton": "1.*",
+        "atekushi/container": "dev-main"
     }
 }

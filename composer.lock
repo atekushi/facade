@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8af64d44ae27fde5f3a10cbb2704440d",
+    "content-hash": "f6c2cee7acd9731c6d8cafb0e7a8940d",
     "packages": [
+        {
+            "name": "atekushi/container",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atekushi/container.git",
+                "reference": "ec5100f9e4bf98ca2a989adffba7b4576dfe891f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atekushi/container/zipball/ec5100f9e4bf98ca2a989adffba7b4576dfe891f",
+                "reference": "ec5100f9e4bf98ca2a989adffba7b4576dfe891f",
+                "shasum": ""
+            },
+            "require": {
+                "atekushi/singleton": "^1.0",
+                "php": "^8.2",
+                "psr/container": "^2.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Atekushi\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Endrika Nanami",
+                    "email": "endrika.nanami@gmail.com"
+                }
+            ],
+            "description": "PHP Container",
+            "support": {
+                "issues": "https://github.com/atekushi/container/issues",
+                "source": "https://github.com/atekushi/container/tree/main"
+            },
+            "time": "2025-01-14T09:37:39+00:00"
+        },
         {
             "name": "atekushi/singleton",
             "version": "1.0.0",
@@ -45,12 +88,68 @@
                 "source": "https://github.com/atekushi/singleton/tree/1.0.0"
             },
             "time": "2025-01-14T09:33:31+00:00"
+        },
+        {
+            "name": "psr/container",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/container.git",
+                "reference": "707984727bd5b2b670e59559d3ed2500240cf875"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/707984727bd5b2b670e59559d3ed2500240cf875",
+                "reference": "707984727bd5b2b670e59559d3ed2500240cf875",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Container\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common Container Interface (PHP FIG PSR-11)",
+            "homepage": "https://github.com/php-fig/container",
+            "keywords": [
+                "PSR-11",
+                "container",
+                "container-interface",
+                "container-interop",
+                "psr"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/container/issues",
+                "source": "https://github.com/php-fig/container"
+            },
+            "time": "2023-09-22T11:11:30+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "atekushi/container": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
