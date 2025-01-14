@@ -14,7 +14,7 @@
             "email": "endrika.nanami@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
         "php": "^8.2"
     }
