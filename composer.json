@@ -17,7 +17,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": "^8.2",
-        "atekushi/singleton": "1.*",
+        "atekushi/singleton": "*",
         "atekushi/container": "dev-main"
     }
 }
